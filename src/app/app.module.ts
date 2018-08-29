@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app.routing';
 import { Page1Component } from './page1/page1.component';
 import { SrkNgGridModule } from './srk-ng-grid/srk-ng-grid.module';
+import { GlobalCommunicateService } from './services/global-communicate.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { SrkNgGridModule } from './srk-ng-grid/srk-ng-grid.module';
     RouterModule.forRoot(routes),
     SrkNgGridModule
   ],
-  providers: [],
+  providers: [GlobalCommunicateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

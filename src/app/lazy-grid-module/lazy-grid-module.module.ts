@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LazyPage1Component } from '../lazy-page1/lazy-page1.component';
 import { SrkNgGridModule } from '../srk-ng-grid/srk-ng-grid.module';
 import { RouterModule, Routes } from '@angular/router';
+import { GlobalCommunicateService } from '../services/global-communicate.service';
 
 const routes: Routes = [
   { path: 'load-me', component: LazyPage1Component }
